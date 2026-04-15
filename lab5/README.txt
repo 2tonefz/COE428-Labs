@@ -1,0 +1,1 @@
+A stand-alone tag such as <foo/> is already balanced by itself, so it should not be pushed onto or popped from the stack. I would modify Requirement 1 so that after reading a tag, the program checks whether it ends with />. If it does, the program treats it as a self-closing tag and simply continues processing the rest of the input. The rest of the algorithm stays the same.
